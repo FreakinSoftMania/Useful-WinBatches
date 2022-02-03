@@ -9,5 +9,8 @@ jobs:
     steps:
      - uses: actions/checkout@v2.4.0
      - name: Run a example PowerShell In CMD Batch script
-       run: "D:\\a\\Useful-WinBatches\\Useful-WinBatches\\Batch-Files\\PowerShell\\PowerShell In CMD.bat"
+       run: |
+        setx PWSHDIR "D:\a\Useful-WinBatches\Useful-WinBatches\Batch-Files\PowerShell\"
+        cmd
+        "%PWSHDIR%\PowerShell In CMD.bat"
        shell: cmd
