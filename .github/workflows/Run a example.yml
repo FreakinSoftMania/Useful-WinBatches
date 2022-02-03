@@ -10,5 +10,5 @@ jobs:
      - uses: actions/checkout@v2.4.0
      - name: Run a example PowerShell In CMD Batch script
        working-directory: ./Batch-Files/PowerShell/
-       run: ".\\PowerShell In CMD.bat"
+       run: "'.\\PowerShell In CMD.bat'"
        shell: cmd
