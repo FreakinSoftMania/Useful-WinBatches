@@ -12,5 +12,6 @@ jobs:
        run: |
         setx PWSHDIR "D:\a\Useful-WinBatches\Useful-WinBatches\Batch-Files\PowerShell\"
         cmd
-        "%PWSHDIR%\PowerShell In CMD.bat"
+        cd "%PWSHDIR%"
+        "PowerShell In CMD.bat"
        shell: cmd
