@@ -1,5 +1,7 @@
-on: push
 name: 🚀 Deploy files to FTP on push
+on:
+   push:
+   workflow_dispatch:
 jobs:
   web-deploy:
     name: 🎉 Deploy
