@@ -1,0 +1,3 @@
+files:
+  - source: /Batch-Files/*/
+    translation: /Batch-Files/%two_letters_code%/%original_file_name%
